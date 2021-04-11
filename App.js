@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/native'
+import { View, Text, StyleSheet } from 'react-native'
+
+//import UsePosition from './components/UsePosition'
+import GeolocationFinder from './components/GeolocationFinder'
 
 const Container = styled.View`
   flex: 1;
@@ -14,10 +18,15 @@ const Title = styled.Text`
 `
 
 const App = () => {
+  /*const [position, setPosition] = useState({});
+  const [errorMsg, setErrorMsg] = useState('');*/
+
   return (
     <Container>
       <Title>This is your cool app!</Title>
-      <Title>Go to App.js and start coding</Title>
+      <Text>blabla</Text>
+      <GeolocationFinder
+      />
       <Title>💅💅💅</Title>
     </Container>
   )
