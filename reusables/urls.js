@@ -1,0 +1,1 @@
+export const API_URL = (lat, lng, params) => `https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`
